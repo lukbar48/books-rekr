@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <form class="form">
+      <label>Title<input id="title" required minlength="1" type="text" /></label>
+      <label>Author<input id="author" required minlength="3" type="text"/></label>
+      <label>Priority (1-5)<input id="priority" required min="1" max="5" type="number"/></label>
+      <label
+        >Category
+        <select required id="category">
+          <option defaultValue disabled selected value="">Select</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Biography">Biography</option>
+        </select>
+      </label>
+      <button type='submit' class="form-btn">Submit</button>
+      <div class="error"></div>
+    </form>
+    <div class="library">
+      <div class="top">
+        <div>Title</div>
+        <div>Author</div>
+        <div>Priority</div>
+        <div>Category</div> 
+      </div>
+      <ul class="list"></ul>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>
